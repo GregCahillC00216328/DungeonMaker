@@ -54,6 +54,9 @@
     <ClCompile Include="Factory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SelectedComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Component.h">
@@ -98,6 +101,9 @@
     <ClInclude Include="MapObj.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SelectedComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Component.cpp" />
@@ -111,8 +117,6 @@
     <ClInclude Include="Component.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="Game.h" />
-    <ClInclude Include="Intro.h" />
-    <ClInclude Include="MainMenu.h" />
     <ClInclude Include="PositionComponent.h" />
     <ClInclude Include="Vector2.h" />
     <ClInclude Include="VelocityComponent.h" />

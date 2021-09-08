@@ -30,6 +30,7 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="PositionComponent.cpp" />
+    <ClCompile Include="SelectedComponent.cpp" />
     <ClCompile Include="SpriteComponent.cpp" />
     <ClCompile Include="VelocityComponent.cpp" />
   </ItemGroup>
@@ -45,6 +46,7 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="MapObj.h" />
     <ClInclude Include="PositionComponent.h" />
+    <ClInclude Include="SelectedComponent.h" />
     <ClInclude Include="SpriteComponent.h" />
     <ClInclude Include="Vector2.h" />
     <ClInclude Include="VelocityComponent.h" />

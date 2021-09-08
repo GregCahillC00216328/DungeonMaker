@@ -4,7 +4,7 @@
 #include "BodyComponent.h"
 #include "SpriteComponent.h"
 #include "PositionComponent.h"
-
+#include <SDL.h>
 
 
 class EntityManager
@@ -17,7 +17,8 @@ private:
 	static int  currBiggestStack;
 public:
 	
-	void handleEvents();
+	
+	void handleEvents(SDL_MouseButtonEvent& t_event);
 	void update();
 	void draw(SDL_Renderer* t_screen);
 	void refresh();

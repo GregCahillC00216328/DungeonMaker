@@ -10,6 +10,11 @@
 #include "AudioComponent.h"
 #include "Factory.h"
 
+#include <atlsafe.h>
+#include <windows.h>
+#include <fstream>
+#include <atlimage.h>
+
 class Game
 {
 public:
@@ -36,12 +41,16 @@ private:
 	bool keyTest = false;
 	bool temp = false;
 	bool m_gotAchievment = false;
+	bool m_mouseDown = false;
 
 	float m_timer = 0.0f;
 	float m_frames = 1.0f / 60.0f;
 
 	Factory* m_factory = new ObjFactory();
 	std::vector<MapObj*> m_mapObjVectorArray;
+
+	std::string m_textureArray[3]{"ART/Floor.bmp","ART/iron.bmp","ART/wood.bmp"};
+	int textArrIndex = 0;
 
 	/// <summary>
 	/// Systems
@@ -52,6 +61,6 @@ private:
 
 	void updateEnts(Entity& t_ent, Vector2 t_pos, Vector2 t_size, std::string t_str, bool t_isAnim);
 	
-	
+	void Capture(std::string &t_path);
 	
 };

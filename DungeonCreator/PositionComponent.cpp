@@ -32,6 +32,7 @@ void PositionComponent::render()
 
 void PositionComponent::setPosition(Vector2 position)
 {
+	std::cout << "Test" << std::endl;
 	m_position = position;
 }
 
@@ -67,5 +68,9 @@ void PositionComponent::setToPreviousPos()
 
 Vector2 PositionComponent::getPosition()
 {
+	if (m_position == NULL)
+	{
+		m_position = Vector2(0, 0);
+	}
 	return m_position;
 }
